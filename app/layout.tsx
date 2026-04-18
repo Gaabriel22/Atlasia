@@ -2,9 +2,7 @@ import type { Metadata } from "next"
 import { siteConfig } from "@/lib/seo/site"
 import "./globals.css"
 
-const metadataBase = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-)
+const metadataBase = new URL(siteConfig.url)
 
 export const metadata: Metadata = {
   metadataBase,

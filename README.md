@@ -113,18 +113,15 @@ Para subir o projeto no ambiente local, use os passos abaixo.
 
 ## Variáveis de ambiente
 
-O projeto funciona sem configuração extra em ambiente local, mas você ganha
-URLs canônicas e metadata mais corretos em produção ao definir a URL pública do
-site.
+O projeto usa `https://atlasia-world.vercel.app` como URL pública padrão. Se
+você publicar em outro domínio no futuro, atualize `NEXT_PUBLIC_SITE_URL` para
+gerar URLs canônicas, Open Graph e sitemap corretamente.
 
-Crie um arquivo `.env.local` com:
+Exemplo:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://atlasia.vercel.app
+NEXT_PUBLIC_SITE_URL=https://atlasia-world.vercel.app
 ```
-
-Se essa variável não existir, o projeto usa `https://atlasia.vercel.app` como
-fallback padrão.
 
 ## SEO e dados estruturados
 
@@ -178,13 +175,13 @@ Os principais ajustes visuais estão concentrados em:
 
 ## Deploy
 
-O alvo atual de deploy é a Vercel em `https://atlasia.vercel.app`.
+O alvo atual de deploy é a Vercel em `https://atlasia-world.vercel.app`.
 
 Para publicar:
 
 1. Importe o repositório na Vercel.
-2. Defina `NEXT_PUBLIC_SITE_URL=https://atlasia.vercel.app`.
-3. Rode o deploy com a configuração padrão de `Next.js`.
+2. Rode o deploy com a configuração padrão de `Next.js`.
+3. Defina `NEXT_PUBLIC_SITE_URL=https://atlasia-world.vercel.app`.
 4. Valide em produção:
 
    ```text

@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Explore paises, capitais, idiomas, moedas e populacao em um atlas moderno, rapido e responsivo.",
   defaultTitle: "Atlasia | Atlas moderno de paises, capitais e geografia",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlasia.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlasia-world.vercel.app",
   locale: "pt_BR",
   keywords: [
     "atlas",
